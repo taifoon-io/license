@@ -18,7 +18,7 @@ contract. Any commercial deployment that strips, bypasses, or substitutes the
 donut is a license violation enforceable both legally and via the registry's
 revocation hooks.
 
-If you have license questions, email **taifooon@proton.me**.
+If you have license questions, email **builders@taifoon.io**.
 
 ---
 
@@ -205,7 +205,7 @@ you'd otherwise pick n8n's SUL for your project, TSUL behaves the same way for
 If your use case isn't permitted by the four rules — for example, you want to
 embed Taifoon in a commercial product whose value derives substantially from
 the adapter fleet, and the donut model doesn't fit your billing — sign a
-separate commercial agreement with us. Email **taifooon@proton.me**.
+separate commercial agreement with us. Email **builders@taifoon.io**.
 
 ---
 
@@ -232,7 +232,7 @@ competing services.
 ## Reuse of TSUL
 
 You may use TSUL for your own project. We'd love to hear about it — email
-**taifooon@proton.me**. If your project also has on-chain revenue routing,
+**builders@taifoon.io**. If your project also has on-chain revenue routing,
 adapt the donut clause (rule #4) to reference your own registry contract.
 
 ---
@@ -247,4 +247,4 @@ For the operative on-chain implementation, see
 `taifoon-eco/src/BuildersRegistry.sol`, function
 `recordRevenueTouch()`.
 
-Email **taifooon@proton.me** for any license question.
+Email **builders@taifoon.io** for any license question.

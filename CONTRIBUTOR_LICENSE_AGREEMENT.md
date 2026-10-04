@@ -20,7 +20,7 @@ you have permission to submit it.
 ## 2. Grant of license
 
 You grant the Taifoon project (the maintainers operating under
-`taifooon@proton.me`) a perpetual, worldwide, non-exclusive, royalty-free,
+`builders@taifoon.io`) a perpetual, worldwide, non-exclusive, royalty-free,
 irrevocable license to use, reproduce, modify, distribute, sublicense, and
 relicense the contribution, including under licenses other than the Taifoon
 Sustainable Use License if the project's license terms change in the future.
@@ -80,7 +80,7 @@ hash and explicit re-acceptance from contributors who submit after the
 update block.
 
 For license questions or to request bespoke contribution terms, email
-**taifooon@proton.me**.
+**builders@taifoon.io**.
 
 ---
 

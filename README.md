@@ -12,7 +12,7 @@ This repo holds the canonical text of every license used across the Taifoon proj
 
 Public FAQ (worked examples, plain-English explanations): https://taifoon.io/legal/tsul
 
-License questions: **taifooon@proton.me**
+License questions: **builders@taifoon.io**
 
 ---
 
@@ -49,4 +49,4 @@ Mirrors n8n's pattern: the operative `LICENSE.md` is pinned at one canonical loc
 
 ## Reuse
 
-Want to use TSUL for your own project (especially if you have on-chain revenue routing)? Email **taifooon@proton.me** — we'd love to know about it. Adapt rule #4 to reference your own registry contract.
+Want to use TSUL for your own project (especially if you have on-chain revenue routing)? Email **builders@taifoon.io** — we'd love to know about it. Adapt rule #4 to reference your own registry contract.
