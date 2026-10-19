@@ -92,6 +92,42 @@ how they apply to contributions on the grid; they add no new limitation on use):
 
 ---
 
+## Access, resale and the meter (DRAFT FOR REVIEW, October 2026)
+
+9. **DRAFT FOR REVIEW — Preserve the meter.** Rule 4 is kept where the value
+   routes through the adapter fleet and the registry. Where value is sold
+   through the Taifoon coordination layer as a metered service (a call paid
+   under a Taifoon key: inference, RPC, proofs, grades, jobs, hosting), the
+   obligation is the same, stated once: **every billed unit carries a Taifoon
+   key and produces a meter line whose legs include the ecosystem cut.** The
+   on-chain registry call is one way of complying; a meter line recorded by the
+   coordination layer under the key is another. The cut schedule is not a
+   number in this licence: it is the published parameter at
+   `GET https://coord.taifoon.dev/v1/access/products` (the catalogue), changed
+   with thirty days' notice. Stripping the key, the meter line or its ecosystem
+   leg from a billed unit is a violation of this rule, exactly as bypassing the
+   registry is a violation of rule 4.
+
+10. **DRAFT FOR REVIEW — Resale is permitted under a key.** Notwithstanding
+    rules 1 and 2, you may charge others for access to Taifoon capacity (your
+    own or the layer's) **under a key held by your tenant or vault**, with a
+    markup of your choosing, if (a) rule 9 is kept for every billed unit, (b)
+    your customers are bound by the Taifoon Access Terms (or terms at least as
+    protective, with you remaining primarily liable), flowed down in writing,
+    and (c) the keys you issue to customers are child keys of your tenant,
+    capped and revocable by you, which the layer enforces. The Vault Grant is
+    the signature by which a tenant or vault accepts this rule once for every
+    key it mints. A reseller may not use "Taifoon" in a product name (rule 3).
+
+The service itself (what a key may do, balances and plans, the SLA predicate,
+acceptable use, screening and the upstream venue terms that flow down) is not
+governed by this software licence but by the **Taifoon Access Terms**
+(`TAIFOON-ACCESS-TERMS.md`); enterprise and venue partners sign the **Taifoon
+Enterprise License** (`LICENSE_EE.md`); a vault signs the **Vault Grant**
+(`VAULT-GRANT.md`). One rule is shared by all four documents: rule 9.
+
+---
+
 ## Scope
 
 This license applies to all source code in this repository EXCEPT:
@@ -102,7 +138,10 @@ This license applies to all source code in this repository EXCEPT:
 - Branches other than the default branch — only the canonical branch is
   covered.
 - Source code files that contain `.ee.` in their file name — these are licensed
-  under the separate Taifoon Enterprise License (`LICENSE_EE.md`).
+  under the separate Taifoon Enterprise License (`LICENSE_EE.md`, in this repo).
+- The published n8n community node `n8n-nodes-taifoon` and the public SDK are
+  MIT / Apache 2.0 respectively (n8n verifies only MIT nodes); they call the
+  layer, they are not the layer, and a call they make is still under rule 9.
 - DRAFT FOR REVIEW: the files of the public definitions repository are covered
   by this license (rules 1–8); its contributor templates, where marked, are
   Apache License 2.0 like `templates/adapter-v1/`.
