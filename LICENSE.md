@@ -1,6 +1,6 @@
 # Taifoon Sustainable Use License
 
-**Version 1.0 — May 2026**
+**Version 1.1 — in force from 2026-10-20** · Version 1.0 — May 2026 · Licensor: Interop FZCA, Dubai, United Arab Emirates
 
 This license governs the source code in this repository, except for files
 explicitly marked otherwise (see `## Scope` below). It is fair-code: source is
@@ -15,14 +15,15 @@ contract. Any commercial deployment that strips, bypasses, or substitutes the
 donut is a license violation enforceable both legally and via the registry's
 revocation hooks.
 
-If you have license questions, email **taifooon@proton.me**.
+If you have license questions, email **builders@taifoon.io**.
 
 ---
 
 ## The four rules
 
 The license grants you the free right to use, modify, create derivative works,
-and redistribute, with **four** limitations:
+and redistribute, with **four** limitations (rules 5–8 below add
+how they apply to contributions on the grid; they add no new limitation on use):
 
 1. **You may use or modify the software only for your own internal business
    purposes or for non-commercial or personal use.**
@@ -46,6 +47,84 @@ and redistribute, with **four** limitations:
 
 ---
 
+## Contributions on the grid
+
+5. **What a contribution is.** A *contribution* is any of the
+   following, submitted to the Taifoon coordination layer (through its public
+   contribution interface or the public definitions repository) or merged into
+   this repository:
+   - a *definition*: a transitions file (a job state machine), a λ machine (a
+     resource or lease state machine), a decoder (an event table), a schema, or
+     a protocol manifest;
+   - a *module*: an n8n node, an MCP server, an SDK or CLI package that calls
+     the coordination layer;
+   - an *agent onboarding record*: the claim that names an agent, its chain, its
+     agent id and the wallet it sells from.
+
+6. **The license of a contribution.** Every contribution is
+   licensed under this license (TSUL), with the same four rules as the
+   software, except where its own files say Apache License 2.0 under `## Scope`.
+   A contributor accepts this license for a contribution by signing the
+   contribution message that names it (the message states `license: TSUL`), or
+   by signing the Contributor License Agreement for a pull request. The
+   contributor keeps ownership of the contribution, as the Contributor License
+   Agreement says. Rule 3 applies to contributions: the author attribution and
+   licensing notices a contribution carries may not be removed.
+
+7. **The one split.** There is one split of value on the
+   layer: the 70 / 20 / 10 split of rule 4 (70% to the contributors whose work
+   served the settled call, 20% to the reviewer and grader agents that
+   certified it, 10% to the ecosystem treasury). No deployment, fork or module
+   may introduce a second split of the same fee. GRID that the coordination
+   layer credits for contributions is measured by use (settled jobs that used
+   the contribution, by parties unrelated to the contributor), by the formula
+   published before each season; GRID is a soulbound service credit for use on
+   the layer, not a payment for the license and not a transferable asset.
+
+8. **The record until the registry is deployed.** Until the
+   BuildersRegistry contract named in rule 4 is deployed, the record of a
+   contribution, its author and its status is the signed contribution as
+   published in the coordination layer's public list of contributions, and
+   rule 4's on-chain routing applies from the block the registry is deployed.
+
+---
+
+## Access, resale and the meter
+
+9. **Preserve the meter.** Rule 4 is kept where the value
+   routes through the adapter fleet and the registry. Where value is sold
+   through the Taifoon coordination layer as a metered service (a call paid
+   under a Taifoon key: inference, RPC, proofs, grades, jobs, hosting), the
+   obligation is the same, stated once: **every billed unit carries a Taifoon
+   key and produces a meter line whose legs include the ecosystem cut.** The
+   on-chain registry call is one way of complying; a meter line recorded by the
+   coordination layer under the key is another. The cut schedule is not a
+   number in this licence: it is the published parameter at
+   `GET https://coord.taifoon.dev/v1/access/products` (the catalogue), changed
+   with thirty days' notice. Stripping the key, the meter line or its ecosystem
+   leg from a billed unit is a violation of this rule, exactly as bypassing the
+   registry is a violation of rule 4.
+
+10. **Resale is permitted under a key.** Notwithstanding
+    rules 1 and 2, you may charge others for access to Taifoon capacity (your
+    own or the layer's) **under a key held by your tenant or vault**, with a
+    markup of your choosing, if (a) rule 9 is kept for every billed unit, (b)
+    your customers are bound by the Taifoon Access Terms (or terms at least as
+    protective, with you remaining primarily liable), flowed down in writing,
+    and (c) the keys you issue to customers are child keys of your tenant,
+    capped and revocable by you, which the layer enforces. The Vault Grant is
+    the signature by which a tenant or vault accepts this rule once for every
+    key it mints. A reseller may not use "Taifoon" in a product name (rule 3).
+
+The service itself (what a key may do, balances and plans, the SLA predicate,
+acceptable use, screening and the upstream venue terms that flow down) is not
+governed by this software licence but by the **Taifoon Access Terms**
+(`TAIFOON-ACCESS-TERMS.md`); enterprise and venue partners sign the **Taifoon
+Enterprise License** (`LICENSE_EE.md`); a vault signs the **Vault Grant**
+(`VAULT-GRANT.md`). One rule is shared by all four documents: rule 9.
+
+---
+
 ## Scope
 
 This license applies to all source code in this repository EXCEPT:
@@ -56,7 +135,13 @@ This license applies to all source code in this repository EXCEPT:
 - Branches other than the default branch — only the canonical branch is
   covered.
 - Source code files that contain `.ee.` in their file name — these are licensed
-  under the separate Taifoon Enterprise License (`LICENSE_EE.md`).
+  under the separate Taifoon Enterprise License (`LICENSE_EE.md`, in this repo).
+- The published n8n community node `n8n-nodes-taifoon` and the public SDK are
+  MIT / Apache 2.0 respectively (n8n verifies only MIT nodes); they call the
+  layer, they are not the layer, and a call they make is still under rule 9.
+- The files of the public definitions repository are covered
+  by this license (rules 1–8); its contributor templates, where marked, are
+  Apache License 2.0 like `templates/adapter-v1/`.
 
 ---
 
@@ -110,7 +195,7 @@ who want to integrate her adapter — that is allowed.
 
 ### Example 2 — NOT ALLOWED
 
-Bob forks `taifoon-solver/` and `taifoon-eco/contracts/`, removes the
+Bob forks the solver core and `taifoon-eco/contracts/` (wording only, no change of meaning), removes the
 `recordRevenueTouch()` call from the executor path, redeploys the contracts
 under a different name, and offers "FastBridge by Bob" as a hosted SaaS that
 charges users for cross-chain swaps. The value derives entirely from Taifoon's
@@ -156,7 +241,7 @@ you'd otherwise pick n8n's SUL for your project, TSUL behaves the same way for
 If your use case isn't permitted by the four rules — for example, you want to
 embed Taifoon in a commercial product whose value derives substantially from
 the adapter fleet, and the donut model doesn't fit your billing — sign a
-separate commercial agreement with us. Email **taifooon@proton.me**.
+separate commercial agreement with us. Email **builders@taifoon.io**.
 
 ---
 
@@ -183,14 +268,14 @@ competing services.
 ## Reuse of TSUL
 
 You may use TSUL for your own project. We'd love to hear about it — email
-**taifooon@proton.me**. If your project also has on-chain revenue routing,
+**builders@taifoon.io**. If your project also has on-chain revenue routing,
 adapt the donut clause (rule #4) to reference your own registry contract.
 
 ---
 
 ## Authority
 
-Last updated 2026-05-08. The canonical version of this license is the
+Last updated 2026-10-20 (version 1.1 in force; 1.0 of 2026-05-08 superseded). The canonical version of this license is the
 `LICENSE.md` file at the root of `github.com/taifoon-io/taifoon-eco` and
 `github.com/yawningmonsoon/taifoon-eco`. All other copies are mirrors.
 
@@ -198,4 +283,4 @@ For the operative on-chain implementation, see
 `taifoon-eco/src/BuildersRegistry.sol`, function
 `recordRevenueTouch()`.
 
-Email **taifooon@proton.me** for any license question.
+Email **builders@taifoon.io** for any license question.
