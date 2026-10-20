@@ -1,9 +1,6 @@
 # Taifoon Sustainable Use License
 
-**Version 1.1 — DRAFT FOR REVIEW (October 2026)** · Version 1.0 — May 2026
-
-> DRAFT FOR REVIEW: every clause marked DRAFT FOR REVIEW below is new in 1.1 and is not in force
-> until the licensor publishes 1.1 without this notice. Version 1.0 governs until then.
+**Version 1.1 — in force from 2026-10-20** · Version 1.0 — May 2026 · Licensor: Interop FZCA, Dubai, United Arab Emirates
 
 This license governs the source code in this repository, except for files
 explicitly marked otherwise (see `## Scope` below). It is fair-code: source is
@@ -25,7 +22,7 @@ If you have license questions, email **builders@taifoon.io**.
 ## The four rules
 
 The license grants you the free right to use, modify, create derivative works,
-and redistribute, with **four** limitations (DRAFT FOR REVIEW: rules 5–8 below add
+and redistribute, with **four** limitations (rules 5–8 below add
 how they apply to contributions on the grid; they add no new limitation on use):
 
 1. **You may use or modify the software only for your own internal business
@@ -50,9 +47,9 @@ how they apply to contributions on the grid; they add no new limitation on use):
 
 ---
 
-## Contributions on the grid (DRAFT FOR REVIEW)
+## Contributions on the grid
 
-5. **DRAFT FOR REVIEW — What a contribution is.** A *contribution* is any of the
+5. **What a contribution is.** A *contribution* is any of the
    following, submitted to the Taifoon coordination layer (through its public
    contribution interface or the public definitions repository) or merged into
    this repository:
@@ -64,7 +61,7 @@ how they apply to contributions on the grid; they add no new limitation on use):
    - an *agent onboarding record*: the claim that names an agent, its chain, its
      agent id and the wallet it sells from.
 
-6. **DRAFT FOR REVIEW — The license of a contribution.** Every contribution is
+6. **The license of a contribution.** Every contribution is
    licensed under this license (TSUL), with the same four rules as the
    software, except where its own files say Apache License 2.0 under `## Scope`.
    A contributor accepts this license for a contribution by signing the
@@ -74,7 +71,7 @@ how they apply to contributions on the grid; they add no new limitation on use):
    Agreement says. Rule 3 applies to contributions: the author attribution and
    licensing notices a contribution carries may not be removed.
 
-7. **DRAFT FOR REVIEW — The one split.** There is one split of value on the
+7. **The one split.** There is one split of value on the
    layer: the 70 / 20 / 10 split of rule 4 (70% to the contributors whose work
    served the settled call, 20% to the reviewer and grader agents that
    certified it, 10% to the ecosystem treasury). No deployment, fork or module
@@ -84,7 +81,7 @@ how they apply to contributions on the grid; they add no new limitation on use):
    published before each season; GRID is a soulbound service credit for use on
    the layer, not a payment for the license and not a transferable asset.
 
-8. **DRAFT FOR REVIEW — The record until the registry is deployed.** Until the
+8. **The record until the registry is deployed.** Until the
    BuildersRegistry contract named in rule 4 is deployed, the record of a
    contribution, its author and its status is the signed contribution as
    published in the coordination layer's public list of contributions, and
@@ -92,9 +89,9 @@ how they apply to contributions on the grid; they add no new limitation on use):
 
 ---
 
-## Access, resale and the meter (DRAFT FOR REVIEW, October 2026)
+## Access, resale and the meter
 
-9. **DRAFT FOR REVIEW — Preserve the meter.** Rule 4 is kept where the value
+9. **Preserve the meter.** Rule 4 is kept where the value
    routes through the adapter fleet and the registry. Where value is sold
    through the Taifoon coordination layer as a metered service (a call paid
    under a Taifoon key: inference, RPC, proofs, grades, jobs, hosting), the
@@ -108,7 +105,7 @@ how they apply to contributions on the grid; they add no new limitation on use):
    leg from a billed unit is a violation of this rule, exactly as bypassing the
    registry is a violation of rule 4.
 
-10. **DRAFT FOR REVIEW — Resale is permitted under a key.** Notwithstanding
+10. **Resale is permitted under a key.** Notwithstanding
     rules 1 and 2, you may charge others for access to Taifoon capacity (your
     own or the layer's) **under a key held by your tenant or vault**, with a
     markup of your choosing, if (a) rule 9 is kept for every billed unit, (b)
@@ -142,7 +139,7 @@ This license applies to all source code in this repository EXCEPT:
 - The published n8n community node `n8n-nodes-taifoon` and the public SDK are
   MIT / Apache 2.0 respectively (n8n verifies only MIT nodes); they call the
   layer, they are not the layer, and a call they make is still under rule 9.
-- DRAFT FOR REVIEW: the files of the public definitions repository are covered
+- The files of the public definitions repository are covered
   by this license (rules 1–8); its contributor templates, where marked, are
   Apache License 2.0 like `templates/adapter-v1/`.
 
@@ -198,7 +195,7 @@ who want to integrate her adapter — that is allowed.
 
 ### Example 2 — NOT ALLOWED
 
-Bob forks the solver core and `taifoon-eco/contracts/` (DRAFT FOR REVIEW: wording only, no change of meaning), removes the
+Bob forks the solver core and `taifoon-eco/contracts/` (wording only, no change of meaning), removes the
 `recordRevenueTouch()` call from the executor path, redeploys the contracts
 under a different name, and offers "FastBridge by Bob" as a hosted SaaS that
 charges users for cross-chain swaps. The value derives entirely from Taifoon's
@@ -278,7 +275,7 @@ adapt the donut clause (rule #4) to reference your own registry contract.
 
 ## Authority
 
-Last updated 2026-05-08 (1.1 DRAFT FOR REVIEW prepared 2026-10-03). The canonical version of this license is the
+Last updated 2026-10-20 (version 1.1 in force; 1.0 of 2026-05-08 superseded). The canonical version of this license is the
 `LICENSE.md` file at the root of `github.com/taifoon-io/taifoon-eco` and
 `github.com/yawningmonsoon/taifoon-eco`. All other copies are mirrors.
 

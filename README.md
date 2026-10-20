@@ -6,11 +6,11 @@ This repo holds the canonical text of every license used across the Taifoon proj
 
 | File | Applies to |
 |------|-----------|
-| [`LICENSE.md`](./LICENSE.md) | The Taifoon Sustainable Use License (TSUL) v1.0 — fair-code, on-chain donut routing. Used by `taifoon-eco`, `taifoon-mamba`, `open-mamba`, `taifoon-next` (the platform / contract / agent code). |
+| [`LICENSE.md`](./LICENSE.md) | The Taifoon Sustainable Use License (TSUL) v1.1 — fair-code, on-chain donut routing. Used by `taifoon-eco`, `taifoon-mamba`, `open-mamba`, `taifoon-next` (the platform / contract / agent code). |
 | [`APACHE-2.0.md`](./APACHE-2.0.md) | Apache License 2.0 — used by `taifoon-solver`, `taifoon-sdk`, and contributor templates (the public-goods code). |
-| [`TAIFOON-ACCESS-TERMS.md`](./TAIFOON-ACCESS-TERMS.md) | DRAFT FOR REVIEW — the Taifoon Access Terms (TAT): the service contract of a key (scopes, balances, plans, the SLA predicate, acceptable use, screening, the venue terms that flow down). |
-| [`LICENSE_EE.md`](./LICENSE_EE.md) | DRAFT FOR REVIEW — the Taifoon Enterprise License (TEL): the `.ee.` files and the countersigned partner agreement (postpaid, negotiated cuts, KYB, DPA) with the reseller schedule. |
-| [`VAULT-GRANT.md`](./VAULT-GRANT.md) | DRAFT FOR REVIEW — the Vault Grant: one signature by a tenant or vault that every key it mints inherits (scopes, spend cap, cuts, screening, venue terms). |
+| [`TAIFOON-ACCESS-TERMS.md`](./TAIFOON-ACCESS-TERMS.md) | The Taifoon Access Terms (TAT): the service contract of a key (scopes, balances, plans, the SLA predicate, acceptable use, screening, the venue terms that flow down). |
+| [`LICENSE_EE.md`](./LICENSE_EE.md) | The Taifoon Enterprise License (TEL): the `.ee.` files and the countersigned partner agreement (postpaid, negotiated cuts, KYB, DPA) with the reseller schedule. |
+| [`VAULT-GRANT.md`](./VAULT-GRANT.md) | The Vault Grant: one signature by a tenant or vault that every key it mints inherits (scopes, spend cap, cuts, screening, venue terms). |
 | [`CONTRIBUTOR_LICENSE_AGREEMENT.md`](./CONTRIBUTOR_LICENSE_AGREEMENT.md) | The CLA every contributor accepts on first PR or first on-chain `submitAdapter()`. |
 
 Public FAQ (worked examples, plain-English explanations): https://taifoon.io/legal/tsul

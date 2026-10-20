@@ -1,8 +1,7 @@
 # Taifoon Enterprise License (TEL)
 
-**Version 1.0 — DRAFT FOR REVIEW BY COUNSEL (October 2026).** The `.ee.` source files reference this licence; until the owner
-dates it, those files are governed by the Taifoon Sustainable Use License. This is the drafting brief for the countersigned
-agreement that enterprises and venue partners (n8n as a venue, an inference partner) sign. It carries the Taifoon Access Terms
+**Version 1.0 — in force from 2026-10-20.** Licensor: Interop FZCA, Dubai, United Arab Emirates. The `.ee.` source files
+reference this licence. It is the base of the countersigned agreement that enterprises and venue partners (n8n as a venue, an inference partner) sign. It carries the Taifoon Access Terms
 and TSUL rule 9 inside it.
 
 ## 1. What it grants
@@ -31,6 +30,7 @@ upstream venue's terms (Venice ToS 7.3) flow through the partner to its customer
 
 ## 4. Term, audit, law
 Term and renewal, an audit right over the meter (read-only, through the partner's own `GET /v1/access/reseller` and the stream),
-termination for a rule-9 breach, governing law and venue: to be set by counsel.
+termination for a rule-9 breach. The countersigned agreement sets the term, the renewal and any negotiated terms. Governing law:
+the laws of the Emirate of Dubai and the federal laws of the United Arab Emirates as applied in Dubai, with the competent courts of Dubai as the venue for any dispute; the licensor is Interop FZCA, Dubai, United Arab Emirates.
 
 Contact: builders@taifoon.io.

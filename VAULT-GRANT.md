@@ -1,6 +1,6 @@
 # Vault Grant
 
-**Version 1.0 — DRAFT FOR REVIEW BY COUNSEL (October 2026).** The one signature a tenant or a vault makes so that every key it
+**Version 1.0 — in force from 2026-10-20.** Made with Interop FZCA, Dubai, United Arab Emirates. The one signature a tenant or a vault makes so that every key it
 mints inherits the Taifoon Access Terms and TSUL rule 9. The same shape as a platform agreement a payment platform signs once for
 its sub-accounts, and as a signed spending mandate for an agent: the grant lists the parties, the allowed scopes, the spending cap
 per key and period, the cuts, the screening level and the upstream venue terms.
@@ -30,5 +30,8 @@ per key and period, the cuts, the screening level and the upstream venue terms.
 The vault's sign policy is the grant's spend cap and scopes in the box's own words: the Taifoon vault key signs only what the
 policy allows, and the grant is the policy's signed authorization (wiki VAULT §4). Until the tenant vault is built, the grant
 governs keys only.
+
+## 4. Law
+The grant is made with Interop FZCA, Dubai, United Arab Emirates, and is governed by the laws of the Emirate of Dubai and the federal laws of the United Arab Emirates as applied in Dubai, with the competent courts of Dubai as the venue for any dispute.
 
 Contact: builders@taifoon.io.

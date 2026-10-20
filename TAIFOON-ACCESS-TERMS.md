@@ -1,7 +1,7 @@
 # Taifoon Access Terms (TAT)
 
-**Version 1.0 — DRAFT FOR REVIEW BY COUNSEL (October 2026).** Not in force until the owner dates it. This is the drafting brief
-for the service contract that governs the use of a Taifoon key; the software is governed by the Taifoon Sustainable Use License
+**Version 1.0 — in force from 2026-10-20.** Offered by Interop FZCA, Dubai, United Arab Emirates ("Taifoon", "we"). This is
+the service contract that governs the use of a Taifoon key; the software is governed by the Taifoon Sustainable Use License
 (`LICENSE.md`). The two share one rule: every billed unit carries a Taifoon key and produces a meter line whose legs include the
 ecosystem cut (TSUL rule 9).
 
@@ -53,6 +53,7 @@ inherits the reseller's acceptance; the reseller remains primarily liable for it
 ## 7. Term, changes, law
 1. These terms run while a key of yours exists; revoking every key ends them for that tenant, the record stays.
 2. Changes with thirty days' notice on the site and in the acceptance record; continued use is acceptance.
-3. Governing law and venue: to be set by counsel.
+3. Governing law and venue: these terms are made with Interop FZCA, Dubai, United Arab Emirates, and are governed by
+   the laws of the Emirate of Dubai and the federal laws of the United Arab Emirates as applied in Dubai, with the competent courts of Dubai as the venue for any dispute.
 
 Contact: builders@taifoon.io · the governing text lives in this repository; the site (`/legal/access-terms`) mirrors it.
